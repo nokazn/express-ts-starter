@@ -69,18 +69,6 @@
       "~/*": [
         "src/*"
       ],
-      "@daos/*": [
-        "src/daos/*"
-      ],
-      "@entities/*": [
-        "src/entities/*"
-      ],
-      "@shared/*": [
-        "src/shared/*"
-      ],
-      "@server": [
-        "src/Server"
-      ]
     },
   },
   "include": [
@@ -88,6 +76,6 @@
     "spec/**/*.ts"
   ],
   "exclude": [
-    "src/public/"
+    "src/public/",
   ]
 }

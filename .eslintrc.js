@@ -2,6 +2,7 @@ module.exports = {
   env: {
     es6: true,
     node: true,
+    'jest/globals': true,
   },
   globals: {
     Atomics: 'readonly',
@@ -20,7 +21,7 @@ module.exports = {
     sourceType: 'module',
     project: ['./tsconfig.json'],
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'jest'],
   rules: {
     // switch 文での prettier との競合を防ぐ
     indent: [2, 2, { SwitchCase: 1 }],
